@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>StemBot Math Tutor</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header >
+            <h1> StemBot <h1>
+            <h2 style="position: relative;
+            top: 15px; left: 15px;"><i>- I can help you on your Journey</i></h2>
+        </header>
+        <main>
+            <nav>
+                <h2 Style="font-size: 35px; font-weight: lighter; padding-bottom: 10px;">Meet the Team</h2>
+                <aspace>-</aspace>
+                <aspace>-</aspace>
+                <bot><a href="file:///G:/My%20Drive/10th%20Grade/Foundations/HackTJ24/EduBot/main.html">Home</a></bot>
+                <aspace>-</aspace>
+                <space>-</space>
+                <aspace>-</aspace>
+                <bot><a href="file:///G:/My%20Drive/10th%20Grade/Foundations/HackTJ24/EduBot/darwin.html">Charles Darwin</a></bot>
+                <category>Science</category>
+                <subcategory>(Biology & Chemistry)</subcategory>
+                <aspace>-</aspace>
+                <space>-</space>
+                <aspace>-</aspace>
+                <bot><a href="file:///G:/My%20Drive/10th%20Grade/Foundations/HackTJ24/EduBot/pythagoras.html">Pythagoras</a></bot>
+                <category>Math</category>
+                <subcategory>(Calculus & Statistics)</subcategory>
+            </nav>
+
+            <section>
+                <div class="output">
+                    <img Style="width:60rem; height:30rem;" src="https://www.themarginalian.org/wp-content/uploads/2018/05/pythagoras.jpg?fit=600%2C315&ssl=1">
+                </div>
+                <!--<div class="ins">
+                    <div class="inbox">
+                        <input id="input" type="text" placeholder="Ask me anything...">
+                    </div>
+                </div>-->
+                <button type="button" class="button">Take me there</button>
+            </section>
+        </main>
+        <footer>
+            <h5>Created by TJ students through use of OpenAI @ HackTJ, 02/25/2024</h5>
+        </footer>
+  <!-- <script>// Assuming you have already initialized openai.beta
+
+    async function runCode() {
+        try {
+            const thread = await openai.beta.threads.create();
+            var input = document.getElementById("inbox"); // Ensure you have an input element in your HTML
+            const message = await openai.beta.threads.messages.create(
+                thread.id,
+                {
+                    role: "user",
+                    content: input.value
+                }
+            );
+
+            // Custom headers object with OpenAI-Beta header
+            const customHeaders = new Headers();
+            customHeaders.append('OpenAI-Beta', 'assistants=v1');
+
+            const requestOptions = {
+                method: 'POST',
+                headers: customHeaders,
+                body: JSON.stringify({
+                    assistant_id: assistant.id,
+                    instructions: "Please address the user as Jane Doe. The user has a premium account."
+                })
+            };
+
+            // Fetch API to create a new run with custom headers
+            const response = await fetch(`YOUR_API_ENDPOINT`, requestOptions);
+            const runResult = await response.json();
+
+            // Assuming you have an element with id "output" to display the result
+            var outputElement = document.getElementById("output");
+            outputElement.innerText = runResult.generated_output; // Update the element with the response
+        } catch (error) {
+            console.error("An error occurred:", error);
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function(){
+        var button = document.getElementById("button");   
+        // Add a click event listener to the button 
+        button.addEventListener("click", function() { 
+            // Code to execute when the button is clicked 
+            if(document.getElementById("input") != null) {
+                    runCode();
+            };
+        });
+    }); 
+    </script> -->
+    </body>
+</html>
